@@ -30,24 +30,24 @@ const Home = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link c__link" aria-current="page" href="/">
+                <a className="nav-link c__link" aria-current="page" href="#home">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link c__link" href="/">
+                <a className="nav-link c__link" href="#about">
                   About
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link c__link" href="/">
+                <a className="nav-link c__link" href="#project">
                   Projects
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link c__link" href="/" tabindex="-1" aria-disabled="true">
+                <a className="nav-link c__link" href="#contact" tabindex="-1" aria-disabled="true">
                   Contact
                 </a>
               </li>
