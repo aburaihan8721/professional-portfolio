@@ -1,13 +1,13 @@
 import React from "react";
 import "./About.css";
-import aboutImg from "../../images/about.jpg";
+import aboutImg from "../../images/myPic1.png";
 
 const About = () => {
   //  Up To Top Btn
-  window.addEventListener("scroll", function () {
-    const upToTop = document.querySelector("a.bottom__to__top");
-    upToTop.classList.toggle("active", window.scrollY > 0);
-  });
+  // window.addEventListener("scroll", function () {
+  //   const upToTop = document.querySelector("a.bottom__to__top");
+  //   upToTop.classList.toggle("active", window.scrollY > 0);
+  // });
 
   return (
     <div className="about component__space" id="about">

@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 import "./Contact.css";
-import contactImg from "../../images/about.jpg";
+import contactImg from "../../images/myPic1.png";
 
 const Contact = () => {
-  const [success, setSuccess] = useState(false);
+  // const [success, setSuccess] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,8 +19,9 @@ const Contact = () => {
         console.log(error.text);
       }
     );
-    setSuccess(true);
+    // setSuccess(true);
     e.target.reset();
+    // setSuccess(false);
   };
 
   return (
@@ -44,11 +45,6 @@ const Contact = () => {
                 <button className="btn contact pointer" type="submit">
                   Submit
                 </button>
-                {success && (
-                  <div className="alert alert-primary" role="alert">
-                    Your message has been submitted successfully!
-                  </div>
-                )}
               </form>
             </div>
           </div>

@@ -3,6 +3,7 @@ import "./Projects.css";
 import Project1 from "../../images/portfolio-1.jpg";
 import Project2 from "../../images/portfolio-2.jpg";
 import Project3 from "../../images/portfolio-3.jpg";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -29,9 +30,17 @@ const Projects = () => {
               <div className="project__meta absolute">
                 <h5 className="project__text">Exclusive Motors</h5>
                 <h4 className="project__text">Buying Car Related Website</h4>
-                <a href="https://exclusive-motors-client.web.app/" target="_blank" rel="noreferrer" className="project__btn">
+                <Link to="motors" className="project__btn">
                   View Details
-                </a>
+                </Link>
+                {/* <a
+                  href="https://exclusive-motors-client.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project__btn"
+                >
+                  Live link
+                </a> */}
               </div>
             </div>
           </div>
@@ -46,9 +55,17 @@ const Projects = () => {
               <div className="project__meta absolute">
                 <h5 className="project__text">Travel Boss</h5>
                 <h4 className="project__text">Travel Related Website</h4>
-                <a href="https://travel-boss-client-b3b09.web.app/" target="_blank" rel="noreferrer" className="project__btn">
+                <Link to="travel" className="project__btn">
                   View Details
-                </a>
+                </Link>
+                {/* <a
+                  href="https://travel-boss-client-b3b09.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project__btn"
+                >
+                  Live link
+                </a> */}
               </div>
             </div>
           </div>
@@ -63,9 +80,17 @@ const Projects = () => {
               <div className="project__meta absolute">
                 <h5 className="project__text">RJ Health Care</h5>
                 <h4 className="project__text">Health Care Related Website</h4>
-                <a href="https://rj-health-care.web.app/" target="_blank" rel="noreferrer" className="project__btn">
+                <Link to="health" className="project__btn">
                   View Details
-                </a>
+                </Link>
+                {/* <a
+                  href="https://rj-health-care.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project__btn"
+                >
+                  Live link
+                </a> */}
               </div>
             </div>
           </div>

@@ -6,13 +6,19 @@
   background-size: cover;
 }
 
-#home nav{
-    padding-top: 30px;
+#home nav {
+  padding: 20px 0;
+  background: #191919;
 }
 
 #home li .c__link {
   font-size: 18px;
   color: #fff;
+  font-weight: 600;
+}
+
+#home li .c__link:hover {
+  color: #f9004d;
 }
 
 .home__content {

@@ -4,17 +4,17 @@ import logo from "../../images/logo.png";
 
 const Home = () => {
   // fixed Header
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    header.classList.toggle("active", window.scrollY > 0);
-  });
+  // window.addEventListener("scroll", function () {
+  //   const header = document.querySelector(".header");
+  //   header.classList.toggle("active", window.scrollY > 0);
+  // });
 
   return (
-    <div className="home__bg" id="home">
-      <nav className="navbar navbar-expand-lg navbar-dark header">
+    <div className="home__bg component__space" id="home">
+      <nav className="navbar navbar-expand-lg navbar-dark header fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="/">
-            <img src={logo} alt="" width="60" height="30" class="d-inline-block align-text-top" />
+          <a className="navbar-brand" href="#home">
+            <img src={logo} alt="" width="60" height="30" className="d-inline-block align-text-top" />
           </a>
           <button
             className="navbar-toggler"
@@ -28,7 +28,7 @@ const Home = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto text-center">
               <li className="nav-item">
                 <a className="nav-link c__link" aria-current="page" href="#home">
                   Home
